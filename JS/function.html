@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #one {
+            border: solid red;
+            height: 200px;
+            width: 200px;
+            background: chocolate;
+        }
+    </style>
 </head>
-<body>
+
+<body id="three">
+    <div id="two">
+        <button onclick="red()">Red</button>
+        <button onclick="green()">Green</button>
+        <button onclick="blue()">Blue</button>
+    </div>
+    <!-- <div id="one">
+        <button onclick="abes()">Click</button>
+        <p id="aaa"></p>
+    </div> -->
     <script>
-        function abes()
-        {
-            document.write("hi we are student of abes");
+        // function abes()
+        // {
+        //     document.write("hi we are student of abes");
+        // }
+        // abes();
+        // function add()
+        // {
+        //     var x=10;
+        //     var y=20;
+        //     var sum= x+y;
+        //     document.writeln(sum);
+        // }
+        // function sub()
+        // {
+        //     var x=20;
+        //     var y=10;
+        //     var sub=x-y;
+        //     document.writeln(sub)
+        // }
+        // add();
+        // sub();
+        // function abes()
+        // {
+        //     document.getElementById("aaa").innerHTML="Hello"
+        // }
+        function red() {
+            document.getElementById("two").style.backgroundColor="red"
+            document.getElementById("three").style.backgroundColor="red"
         }
-        abes();
-        function add()
-        {
-            var x=10;
-            var y=20;
-            var sum= x+y;
-            document.writeln(sum);
+        function green() {
+            document.getElementById("two").style.backgroundColor="green"
+            document.getElementById("three").style.backgroundColor="green"
         }
-        function sub()
-        {
-            var x=20;
-            var y=10;
-            var sub=x-y;
-            document.writeln(sub)
+        function blue() {
+            document.getElementById("two").style.backgroundColor="blue"
+            document.getElementById("three").style.backgroundColor="blue"
         }
-        add();
-        sub();
     </script>
 </body>
+
 </html>
