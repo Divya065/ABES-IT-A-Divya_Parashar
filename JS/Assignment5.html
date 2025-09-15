@@ -24,6 +24,19 @@
         height: 200px;
         width: 200px;
     }
+    #container{
+        display: flex;
+    }
+    #one img{
+        margin: 5px;
+        height: 200px;
+        width: 200px;
+    }
+    #two img{
+        margin: 5px;
+        height: 200px;
+        width: 200px;
+    }
 </style>
 
 <body>
@@ -34,14 +47,24 @@
         </nav>
 
         <div class="box">
-            <div id="circle">
-
-            </div>
+            <div id="circle"></div>
             <br><br>
             <button onclick="inc()">+</button>
             <button onclick="dec()">-</button>
         </div>
     </center>
+    <div id="container">
+        <div id="one">
+            <img src="chatgpt.png" alt="">
+            <br><br>
+            <button onclick="hide()">Hide</button>
+        </div>
+        <div id="two">
+            <img src="chatgpt1.jpg" alt="" id="img">
+            <br><br>
+            <button>Change</button>
+        </div>
+    </div>
     <script>
         var x = 0;
         function inc() {
@@ -61,6 +84,14 @@
             else {
                 alert("lower than limit");
             }
+        }
+        function hide()
+        {
+            document.getElementById("one").style.display="none"
+        }
+        function change()
+        {
+            document.getElementById("two").src="chatgpt1.png";
         }
     </script>
 </body>
