@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        #box {
+            min-width: 300px;
+            /* minimum width */
+            min-height: 300px;
+            /* minimum height */
+            width: fit-content;
+            /* grow horizontally if needed */
+            padding: 10px;
+            background: peachpuff;
+            display: inline-block;
+            /* keeps box only as wide as content */
+        }
+
+        .task {
+            display: flex;
+            justify-content: space-between;
+            margin: 4px 0;
+            background: #fff;
+            padding: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            cursor: pointer
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>ToDo List</h1>
+        <div id="box">
+            <input id="input" placeholder="Enter task">
+            <button id="add">Add</button>
+            <div id="list"></div>
+        </div>
+    </center>
+
+    <script>
+        const input = document.getElementById("input");
+        const list = document.getElementById("list");
+
+        document.getElementById("add").onclick = () => {
+            const text = input.value.trim();
+            if (!text) return;
+            const item = document.createElement("div");
+            item.className = "task";
+            item.innerHTML = `<span>${text}</span><button>X</button>`;
+            item.querySelector("button").onclick = () => item.remove();
+            list.appendChild(item);
+            input.value = "";
+        };
+    </script>
+</body>
+
+</html>
