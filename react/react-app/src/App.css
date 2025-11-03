@@ -44,3 +44,8 @@
 .card{
   display: flex;
 }
+
+#app{
+  display: flex;
+  flex-direction: column;
+}

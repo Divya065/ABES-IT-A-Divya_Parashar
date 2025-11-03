@@ -1,22 +1,14 @@
-import './App.css'
-import { Card } from './components/card';
-import Navbar from './components/navbar'
-import Count1 from './components/Usestate'
-
+import React from 'react'
+import Book from './components/book.jsx'
 function App() {
-
   return (
-    <>
-      <div>
-      {/* <Nav/><br />
-      <Card/>
-    <br /><Card/>
-    <br />
-    <Card/> */}
-    <Count1/>
+    <div id ='app'>
+      <Navbar/>
+      <Book/>
+      <Book/>
+      <Book/>
     </div>
 
-    </>
   )
 }
 
