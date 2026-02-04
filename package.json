@@ -2,5 +2,23 @@
   "dependencies": {
     "bootstrap": "^5.3.8",
     "react-bootstrap": "^2.10.10"
-  }
+  },
+  "name": "q",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Divya065/ABES-IT-A-Divya_Parashar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Divya065/ABES-IT-A-Divya_Parashar/issues"
+  },
+  "homepage": "https://github.com/Divya065/ABES-IT-A-Divya_Parashar#readme",
+  "description": ""
 }
