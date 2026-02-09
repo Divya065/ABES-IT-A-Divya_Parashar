@@ -53,4 +53,24 @@ const myServer=http.createServer((req,res)=>{
 // console.log(result);
 
 const fs=require('fs');
-fs.writeFile("./it-a.txt","We are students of IT A class",()=>{});
+// fs.writeFile("./it-a.txt","We are students of IT A class",()=>{});
+// fs.readFile("./it-a.txt","utf-8",(err,result)=>{
+//     if(err)
+//         console.log("Error:",err);
+//     else
+//         console.log(result);
+// });
+
+// fs.appendFileSync("./it-a.txt"," and i am happy");
+// fs.appendFile("./it-a.txt","\n i want to study",()=>{});
+// fs.appendFile("./it-a.txt","\n i want to study AI",(result)=>{
+//     if(result)
+//         console.log(result);
+// });
+
+fs.cpSync("A1.txt","B1.txt");
+fs.cp("A1.txt","B1.txt",()=>{});
+fs.cp("A1.txt","B1.txt",(res)=>{
+    if(res)
+        console.log(res);
+});
