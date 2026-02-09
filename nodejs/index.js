@@ -43,4 +43,14 @@ const myServer=http.createServer((req,res)=>{
     }
 });
 
-myServer.listen(8000,()=>{ console.log('Server is running'); });
+// myServer.listen(8000,()=>{ console.log('Server is running'); });
+
+// const fs=require('fs');
+// fs.writeFileSync("./it-a.txt","We are students of IT A class");
+// fs.writeFileSync("./abes.txt","We arre student of ABES");
+
+// const result=fs.readFileSync("./it-a.txt","utf-8");
+// console.log(result);
+
+const fs=require('fs');
+fs.writeFile("./it-a.txt","We are students of IT A class",()=>{});
