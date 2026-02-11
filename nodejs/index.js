@@ -52,7 +52,7 @@ const myServer=http.createServer((req,res)=>{
 // const result=fs.readFileSync("./it-a.txt","utf-8");
 // console.log(result);
 
-const fs=require('fs');
+// const fs=require('fs');
 // fs.writeFile("./it-a.txt","We are students of IT A class",()=>{});
 // fs.readFile("./it-a.txt","utf-8",(err,result)=>{
 //     if(err)
@@ -68,9 +68,18 @@ const fs=require('fs');
 //         console.log(result);
 // });
 
-fs.cpSync("A1.txt","B1.txt");
-fs.cp("A1.txt","B1.txt",()=>{});
-fs.cp("A1.txt","B1.txt",(res)=>{
-    if(res)
-        console.log(res);
-});
+// fs.cpSync("A1.txt","B1.txt");
+// fs.cp("A1.txt","B1.txt",()=>{});
+// fs.cp("A1.txt","B1.txt",(res)=>{
+//     if(res)
+//         console.log(res);
+// });
+// fs.unlinkSync("./B1.txt");
+// fs.mkdirSync("./myfolder");
+// fs.rename("./myfolder","./mynewfolder",()=>{
+//     console.log("Folder renamed");
+// });
+
+const os=require('os');
+console.log("OS platform:",os.platform());
+console.log("userinfo:",os.userInfo());

@@ -1,0 +1,10 @@
+.nav-items{
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    color: black;
+}
+
+img{
+    width: 50px;
+}
