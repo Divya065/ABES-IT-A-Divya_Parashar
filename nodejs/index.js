@@ -83,3 +83,7 @@ const myServer=http.createServer((req,res)=>{
 const os=require('os');
 console.log("OS platform:",os.platform());
 console.log("userinfo:",os.userInfo());
+console.log("CPU architecture:",os.arch());
+console.log("Free memory:",os.freemem());
+console.log("Total memory:",os.totalmem());
+console.log("Uptime:",os.uptime());
