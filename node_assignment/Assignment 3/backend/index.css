@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.card{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    height: fit-content;
+    width:fit-content;
+    background: white;
+    color: black;
+}
+
+.card button{
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: lightblue;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
